@@ -9,9 +9,6 @@
 			<tr>
 				<th><h2>Create Contact</h2></th>
 				<tr>
-					<td><i>Id <input type="text" name="idContact" size="25"></i></td>
-				</tr>
-				<tr>
 					<td><i>first name<input type="text" name="fname" size="25"></i></td>
 				</tr>
 				<tr>

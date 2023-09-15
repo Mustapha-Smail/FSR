@@ -16,12 +16,11 @@ public class ServletCreateContact extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        long idContact =Long.parseLong(request.getParameter("idContact"));
         String fname=request.getParameter("fname");
         String lname=request.getParameter("lname");
         String email=request.getParameter("email");
 
         ServiceContact sc=new ServiceContact();
-        sc.createContact(idContact, fname, lname, email);
+        sc.createContact(fname, lname, email);
     }
 }

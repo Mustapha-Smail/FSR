@@ -1,10 +1,18 @@
 package fr.nanterre.miage.fsr.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Contact {
 
 	private String firstName;
 	private String lastName;
 	private String email;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idContact;
 	
 	public Contact(){
